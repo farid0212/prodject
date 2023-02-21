@@ -1,0 +1,959 @@
+@charset "UTF-8";
+/* line 2, ../../../OneDrive/Рабочий стол/butstrep/sass/styl.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 3, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 7, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+
+/* line 14, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 20, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 24, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.menu_link:hover {
+  text-decoration: none;
+  color: #1eacc7;
+}
+
+/* line 27, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 30, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.menu_item_item:last-child {
+  border: none;
+}
+
+/* line 34, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+hamburger {
+  display: none;
+}
+
+/* line 36, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 42, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 46, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 52, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 58, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 67, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 3, ../../../OneDrive/Рабочий стол/butstrep/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 82, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/bac/uber.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 86, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.promo_header {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 94, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 103, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.promo_descr {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 110, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 3, ../../../OneDrive/Рабочий стол/butstrep/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 126, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 128, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 133, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 142, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 144, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.reasons_descr_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 149, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.reasons_descr_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 155, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.label {
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 168, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.label_white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 171, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.label_min {
+  width: 76px;
+}
+
+/* line 174, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 185, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 188, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 196, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.subtitle_white {
+  color: #fff;
+}
+
+/* line 201, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+/* line 205, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 207, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 214, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/bac/card_1.jpg") center center/cover no-repeat;
+}
+
+/* line 216, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/bac/card_2.jpg") center center/cover no-repeat;
+}
+
+/* line 218, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/bac/card_3.jpg") center center/cover no-repeat;
+}
+
+/* line 220, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/bac/card_4.jpg") center center/cover no-repeat;
+}
+
+/* line 222, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/bac/card_5.jpg") center center/cover no-repeat;
+}
+
+/* line 224, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/bac/card_6.jpg") center center/cover no-repeat;
+}
+
+/* line 226, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 233, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 247, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 254, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 265, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 269, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 895px;
+  padding: 57px 0 138px 0;
+  background: url("../img/bac/mobile_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 274, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 279, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 285, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+
+/* line 294, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 296, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 298, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 300, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 304, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 308, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 314, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../img/img/check_blue.png") center center/cover no-repeat;
+}
+
+/* line 323, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require_descr {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #1ca8c3;
+}
+
+/* line 330, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 334, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../img/img/check_red.png") center center/cover no-repeat;
+}
+
+/* line 336, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.world {
+  position: relative;
+  min-height: 717px;
+  padding: 49px 0;
+  background: url("../img/bac/world_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 341, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.world_link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 49px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+/* line 352, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.world_link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 355, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 358, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 361, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+/* line 366, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 371, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 373, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 376, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 380, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 389, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 391, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 394, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 398, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 403, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 407, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 412, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 423, ../../../OneDrive/Рабочий стол/butstrep/sass/_general.sass */
+.xs-visebl {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 2, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .title {
+    margin-top: 25px;
+  }
+  /* line 5, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .menu_item {
+    padding-right: 23px;
+  }
+  /* line 7, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 10, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo_header {
+    font-size: 43px;
+  }
+  /* line 12, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo_subheader {
+    font-size: 33px;
+  }
+  /* line 15, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+  }
+  /* line 18, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 22, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .mobile_item {
+    width: 100%;
+  }
+  /* line 25, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .require br {
+    display: none;
+  }
+  /* line 27, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .choice {
+    padding: 55px 0;
+    min-height: 840px;
+  }
+  /* line 30, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .choice_img {
+    width: 70%;
+  }
+  /* line 33, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 50%;
+  }
+  /* line 35, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 25%;
+  }
+  /* line 37, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* line 41, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_mobile {
+    display: flex;
+  }
+  /* line 43, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_mobile a {
+    margin: 0 3px;
+  }
+  /* line 45, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_mobile a img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 911px) {
+  /* line 49, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 51, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .menu_link {
+    font-size: 11px;
+  }
+  /* line 54, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader img {
+    width: 100%;
+  }
+  /* line 56, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_official {
+    font-size: 12px;
+  }
+  /* line 58, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_call {
+    margin-top: 23px;
+  }
+  /* line 60, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_phone {
+    font-size: 19px;
+  }
+  /* line 62, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_btn {
+    height: 40px;
+    width: 100%;
+    margin-top: 22px;
+  }
+  /* line 67, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .reasons_descr {
+    margin-top: 20px;
+  }
+  /* line 69, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .reasons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 73, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 75, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 80, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 82, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 86, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .menu {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 50%;
+    left: -100%;
+    flex-direction: column;
+    padding: 20px 15px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.8s all;
+  }
+  /* line 98, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 100, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin-top: 10px;
+  }
+  /* line 104, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .menu_link {
+    font-size: 18px;
+  }
+  /* line 106, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 114, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+  }
+  /* line 122, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+  /* line 126, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
+  /* line 128, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .xs-hiden {
+    display: none;
+  }
+  /* line 130, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .xs-visebl {
+    display: block;
+  }
+  /* line 133, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFF;
+    text-align: center;
+    margin-top: 13px;
+  }
+  /* line 141, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
+  /* line 147, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo {
+    min-height: 450px;
+  }
+  /* line 149, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .mobile {
+    padding: 40px 0;
+  }
+  /* line 151, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .choice {
+    min-height: 600px;
+    min-height-padding: 40px 0;
+  }
+  /* line 154, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .require {
+    padding: 40px 0;
+  }
+  /* line 156, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .world {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 160, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 162, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 164, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader {
+    height: 60px;
+  }
+  /* line 166, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 168, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  /* line 170, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_phone {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  /* line 176, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 6px;
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+  }
+  /* line 181, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo {
+    min-height: 250px;
+  }
+  /* line 183, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo_subheader {
+    font-size: 31px;
+  }
+  /* line 185, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 187, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo_header {
+    font-size: 28px;
+  }
+  /* line 189, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo_subheader {
+    font-size: 23px;
+    margin-top: 3px;
+  }
+  /* line 192, ../../../OneDrive/Рабочий стол/butstrep/sass/_media.sass */
+  .promo_btn {
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=styl.css.map */
